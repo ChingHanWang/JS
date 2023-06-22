@@ -6,20 +6,20 @@
 //   [23, 71, 33, 82, 1] 印出 24
 
 
-// function sumOfSmallestValues(arr) {
-//     arr.sort( function( a , b ){
-//         return a - b
-//     })
-//     return arr[0] + arr[1]
-// //使用sort方法，將陣列重新排列為由小至大，在取前兩個值進行加總
-//   }
+function sumOfSmallestValues(arr) {
+    arr.sort( function( a , b ){
+        return a - b
+    })
+    return arr[0] + arr[1]
+//使用sort方法，將陣列重新排列為由小至大，在取前兩個值進行加總
+  }
 
 // 使用callback函數簡化
-function sumOfSmallestValues(arr) {
-    arr.sort( ( a , b ) => a - b )
-    return arr[0] + arr[1]
+// function sumOfSmallestValues(arr) {
+//     arr.sort( ( a , b ) => a - b )
+//     return arr[0] + arr[1]
 
-  }
+//   }
 
 
   
