@@ -1,33 +1,19 @@
-// 編號：CANDY-001
+// 編號：CANDY-002
 // 程式語言：JavaScript
-// 題目：找出陣列裡最小的兩個值的總和
-// 例如：
-//   [15, 28, 4, 2, 43] 印出 6
-//   [23, 71, 33, 82, 1] 印出 24
+// 題目：請寫一小段程式，印出連續陣列裡缺少的字元
 
+const chars1 = ["a", "b", "c", "d", "f", "g"]
+const chars2 = ["O", "Q", "R", "S"]
 
-function sumOfSmallestValues(arr) {
-    arr.sort( function( a , b ){
-        return a - b
-    })
-    return arr[0] + arr[1]
-//使用sort方法，將陣列重新排列為由小至大，在取前兩個值進行加總
-  }
+function missingChar(chars) {
+  // 實作寫在這裡
+}
 
-// 使用callback函數簡化
-// function sumOfSmallestValues(arr) {
-//     arr.sort( ( a , b ) => a - b )
-//     return arr[0] + arr[1]
+console.log(missingChar(chars1)) // 印出 e
+console.log(missingChar(chars2)) // 印出 P
 
-//   }
-
-
-  
-  const list1 = [19, 5, 42, 2, 77]
-  const list2 = [23, 15, 59, 4, 17]
-  
-  console.log(sumOfSmallestValues(list1)) // 印出 7
-  console.log(sumOfSmallestValues(list2)) // 印出 19
+// 提示：
+// 可使用字串的 charCodeAt 方法...
 
 
 
