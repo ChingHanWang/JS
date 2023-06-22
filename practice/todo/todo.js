@@ -55,9 +55,38 @@ document.addEventListener("DOMContentLoaded" , ()=>{
     const todoList = document.querySelector(".todo-list")
 
 
-    const creatDotoitem = ()=>{
+
+    addBtn.addEventListener("click" ,()=> {
+        // 當click後，要發生的事情
+        createDotoitem()
+        taskInput.value = ""
+        taskInput.focus()
+        
+            
+    
+    })
+
+
+
+   todoList.addEventListener("click" ,(e)=> {
+        // 當click後，要發生的事情
+        if(e.target === buttom ){
+            e.target.parentNode.remove()
+        }
+    
+            
+    
+    })
+
+
+
+    
+    const createDotoitem = ()=>{
+
+        const task = taskInput.value
+
         const toDoitem = `<li class="todo-item">
-                        <span class="item">待辦事項0</span>
+                        <span class="item">${task}</span>
                         <button class="closeBtn">X</button>
                         </li>`
     // 在ES6語法中，使用`...`轉換字串，裡面的字串可以用${} 當成變數
@@ -67,23 +96,19 @@ document.addEventListener("DOMContentLoaded" , ()=>{
             </li>` 
         將  待辦事項0  ==> 改為${}，帶入tackinput所抓到的值
     */
-
-
         todoList.insertAdjacentHTML("afterbegin",toDoitem)
+        // element.insertAdjacentHTML(position, text);
 
 
     }
+
+
+
+    function disp_alert(){
+
+    alert("再打个招呼。这里演示了" + "\n" + "如何在消息框中添加折行。"
     
-    
-    addBtn.addEventListener("click" ,()=> {
-        // 當click後，要發生的事情
-        
-        creatDotoitem()
-    
-    
-    
-    
-    })
+    )}
 
 
 
