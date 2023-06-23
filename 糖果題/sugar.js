@@ -6,7 +6,9 @@ const chars1 = ["a", "b", "c", "d", "f", "g"]
 const chars2 = ["O", "Q", "R", "S"]
 
 function missingChar(chars) {
-  // 實作寫在這裡
+  
+
+  
 }
 
 console.log(missingChar(chars1)) // 印出 e
