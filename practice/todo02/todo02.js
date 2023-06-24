@@ -15,33 +15,27 @@ const toDolist = document.querySelector("#toDolist")
 
 addBtn.addEventListener("click", (e)=> {    
     addItem()
-    
-    
     inPut.value = ""
     inPut.focus()   
     // console.log(123);
-
-    /*
-        當監聽了Btn後，執行 addItem函數
-        把input裡面的valu抓到後，宣告一個常數 ==> item
-
-    */
-
+    // 當監聽了Btn後，執行 addItem函數，把input裡面的valu抓到後，宣告一個常數 ==> item
 
 })
 
 
 const array = []
 
-
 const addItem = ()=>{
-    const item = inPut.value
-    const newItem=  `<li class="newItem">              
+    const listText = inPut.value
+    const id = 
+
+
+    const newList=  `<li class="newItem">              
                     <input class="checkbox" type="checkbox" name="checkbox">
-                    <span class="item">待辦：${item}</span>
+                    <span class="item" id="item-${id}">待辦：${listText}</span>
                     <button class="deleteBtn">Ｘ</button>
                     </li>`
-        toDolist.insertAdjacentHTML("afterbegin", newItem)
+        toDolist.insertAdjacentHTML("afterbegin", newList)
 
     
 
@@ -56,15 +50,6 @@ const addItem = ()=>{
     getItemdata 要跟 下列的localStorage.getItem("todos") 的todo一樣
     const data = JSON.parse(localStorage.getItem("todos")) || []
     */
-
-
-
-
-
-
-
-
-
 
 
 }
