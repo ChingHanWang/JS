@@ -1,58 +1,12 @@
-// 編號：CANDY-002
+// 編號：CANDY-003
 // 程式語言：JavaScript
-// 題目：請寫一小段程式，印出連續陣列裡缺少的字元
+// 題目：完成函數的內容，把陣列裡的 0 都移到最後面
 
-const chars1 = ["a", "b", "c", "d", "f", "g"]
-const chars2 = ["O", "Q", "R", "S"]
+let list = [false, 1, 0, -1, 2, 0, 1, 3, "a"]
 
-
-function missingChar(chars) {
-  const newArray = chars.map((e) => e.charCodeAt());
- 
-  
-  const firstE = newArray[0];
-  const lastE = newArray[newArray.length - 1];
-  const afterChar = [];
-  for (let j = firstE; j <= lastE; j++) {
-    let newChar = String.fromCharCode(j);
-    afterChar.push(newChar);
-    }
-  const missingChar = afterChar.filter((char) => !chars.includes(char));
-  return missingChar;
-  //  使用charCodeAr將變數轉換成Unicode 编码，然後定義一個迴圈，創造出沒有缺少字元的陣列，將兩個陣列使用fliter進行比對，結合includes去交叉比對後，得到缺少的字元
-  
+function moveZerosToEnd(arr) {
+  // 程式碼寫在這裡
 }
 
-console.log(missingChar(chars1)) // 印出 e
-console.log(missingChar(chars2)) // 印出 P
-
-// 提示：
-// 可使用字串的 charCodeAt 方法...
-
-
-
-
-
-
-
-  
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
+let result = moveZerosToEnd(list)
+console.log(result) // 印出 [false, 1, -1, 2, 1, 3, "a", 0, 0]
