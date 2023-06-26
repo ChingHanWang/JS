@@ -10,3 +10,6 @@ function moveZerosToEnd(arr) {
 
 let result = moveZerosToEnd(list)
 console.log(result) // 印出 [false, 1, -1, 2, 1, 3, "a", 0, 0]
+
+
+// 123
