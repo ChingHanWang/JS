@@ -11,7 +11,7 @@ h2.textContent = "i am div"
 
 hello.appendChild(h)
 h.appendChild(h2)
-
+DOM操作Part2-新增刪除修改
 
  */
 
