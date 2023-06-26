@@ -1,19 +1,22 @@
-// 編號：CANDY-003
+// 編號：CANDY-004
 // 程式語言：JavaScript
-// 題目：完成函數的內容，把陣列裡的 0 都移到最後面
+// 題目：完成函數的內容，把傳進去的秒數變成平常人類看的懂的時間格式
 
-let list = [false, 1, 0, -1, 2, 0, 1, 3, "a"]
+function humanReadableTimer(seconds) {
+  // 實作在這裡
 
-function moveZerosToEnd(arr) {
 
-  const Zero = arr.filter ( (e) => e === 0 )
-  const afterFilter = arr.filter ( (e) => e !== 0 )
 
-  return afterFilter.concat(Zero)
-
-  // 使用filter取得0的陣列，再用一次fliter取得不包含o的陣列，最後合併兩個陣列
   
 }
 
-let result = moveZerosToEnd(list)
-console.log(result) // 印出 [false, 1, -1, 2, 1, 3, "a", 0, 0]
+console.log(humanReadableTimer(0)) // 印出 00:00:00
+console.log(humanReadableTimer(59)) // 印出 00:00:59
+console.log(humanReadableTimer(60)) // 印出 00:01:00
+console.log(humanReadableTimer(90)) // 印出 00:01:30
+console.log(humanReadableTimer(3599)) // 印出 00:59:59
+console.log(humanReadableTimer(3600)) // 印出 01:00:00
+console.log(humanReadableTimer(45296)) // 印出 12:34:56
+console.log(humanReadableTimer(86399)) // 印出 23:59:59
+console.log(humanReadableTimer(86400)) // 印出 24:00:00
+console.log(humanReadableTimer(359999)) // 印出 99:59:59
