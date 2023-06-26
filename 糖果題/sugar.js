@@ -3,11 +3,11 @@
 // 題目：完成函數的內容，把傳進去的秒數變成平常人類看的懂的時間格式
 
 function humanReadableTimer(seconds) {
-  // 實作在這裡
+ 
 
 
 
-  
+
 }
 
 console.log(humanReadableTimer(0)) // 印出 00:00:00
