@@ -3,31 +3,17 @@
 // 題目：完成函數的內容，把傳進去的秒數變成平常人類看的懂的時間格式
 
 function humanReadableTimer(seconds) { 
-  let time = new Date();
+  let milliSeconds = seconds * 1000 - 28800000
+  // date單位為毫秒，將輸入的參數轉換成豪秒，再扣掉台灣時區8小時
+
+  let time = new Date(milliSeconds);
   let timeString = time.toTimeString().substring(0 , 8)
-  return timeString
+  
+  // 將時間轉換成字串，並取前面時間片段
+
+  return timeString 
 
 }
-
-
-
-
-// let time = new Date()
-// time.setHours(hour,min,sec,ms)
-// console.log(100);
-
-
-function humanReadableTimer(seconds) { 
-  const time = new Date();
-  time.setSeconds(seconds);
-  let timeString = time.toTimeString()
-  return timeString;
-}
-
-console.log(humanReadableTimer(0)) 
-console.log(humanReadableTimer(59)) // 印出 00:00:59
-
-// string.substring(startIndex, endIndex)
 
 
 console.log(humanReadableTimer(0)) // 印出 00:00:00
