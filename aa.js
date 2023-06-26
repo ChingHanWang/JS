@@ -1,20 +1,50 @@
-function missingChar(chars) {
-    const sortedChars = chars.slice().sort();
-    const pattern = new RegExp(`[^${sortedChars.join('')}]`, 'i');
-    const missingChars = [];
+// document.addEventListener("DOMContentLoaded", ()=> {
+//     const hero = document.querySelector("#hero")
+//     console.log(hero);
+
+
+// })
+
+// 解析瀏覽器一樣要加監聽事件，但是使用JQuery套件可以讓撰寫更方便
+
+/*
+Jquery使用方法
+$
+ƒ (e,t){return new ce.fn.init(e,t)}
+==>表示成功
+
+$("#hero").html("Hello")
+==>抓到元素改變元素的內容
+
+*/  
+
+$().ready(()=>{
+    const hero = $("#hero")
+    hero.html ("hi")
+    console.log(hero);
+
+})
+
+
+// 抓資料
+const url = "https://jsonplaceholder.typicode.com/posts"
+
+$.ajax({url:url}).done( (posts) => {
+    posts.forEach( ( post )=>{
+    console.log(post.title)
+    
+        
+    });
+
+   
   
-    for (let i = sortedChars[0].charCodeAt(); i <= sortedChars[sortedChars.length - 1].charCodeAt(); i++) {
-      const char = String.fromCharCode(i);
-      if (pattern.test(char)) {
-        missingChars.push(char);
-      }
-    }
-  
-    return missingChars;
-  }
-  
-  const chars1 = ["a", "b", "c", "d", "f", "g"];
-  const chars2 = ["O", "Q", "R", "S"];
-  
-  console.log(missingChar(chars1)); // 输出 ["e"]
-  console.log(missingChar(chars2)); // 输出 ["P"]
+
+
+})
+/*抓到網路上JSON資料，透過套件JQery，得到的資料無需重新編譯( .jsonpart)，讓JS直接使用 
+
+*/
+
+ 
+
+
