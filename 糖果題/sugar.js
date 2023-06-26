@@ -5,7 +5,14 @@
 let list = [false, 1, 0, -1, 2, 0, 1, 3, "a"]
 
 function moveZerosToEnd(arr) {
-  // 程式碼寫在這裡
+
+  const Zero = arr.filter ( (e) => e === 0 )
+  const afterFilter = arr.filter ( (e) => e !== 0 )
+
+  return afterFilter.concat(Zero)
+
+  // 使用filter取得0的陣列，再用一次fliter取得不包含o的陣列，最後合併兩個陣列
+  
 }
 
 let result = moveZerosToEnd(list)
