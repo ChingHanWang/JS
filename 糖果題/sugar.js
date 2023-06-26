@@ -9,4 +9,11 @@ function moveZerosToEnd(arr) {
 }
 
 let result = moveZerosToEnd(list)
+<<<<<<< HEAD
 console.log(result) // 印出 [false, 1, -1, 2, 1, 3, "a", 0, 0]
+=======
+console.log(result) // 印出 [false, 1, -1, 2, 1, 3, "a", 0, 0]
+
+
+// 123
+>>>>>>> f1d3d19 (#3 add 123)
