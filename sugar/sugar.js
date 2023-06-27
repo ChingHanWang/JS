@@ -2,9 +2,12 @@
 // 程式語言：JavaScript
 // 題目：完成函數的內容，把傳進去的秒數變成平常人類看的懂的時間格式
 
+// 有問題的地方：跟台灣時區沒有關係
+
 function humanReadableTimer(seconds) { 
   let milliSeconds = seconds * 1000 - 28800000
   // date單位為毫秒，將輸入的參數轉換成豪秒，再扣掉台灣時區8小時
+
 
   let time = new Date(milliSeconds);
   let timeString = time.toTimeString().substring(0 , 8)
