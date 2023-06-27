@@ -1,4 +1,11 @@
 // this 代名詞 五大情境的模擬
+// / this 代名詞
+// 1. 誰呼叫，誰就是 this
+// 2. 沒人呼叫，this -> 全域物件(window / global)
+// 3. 是否有使用 new
+// 4. 是否有使用箭頭函數（箭頭函數沒有 this）
+// 5. 間接啟動 this ==> .call  .apply .bind
+// 6. 是否有啟用 嚴格模式
 
 /*
 Note : 
@@ -19,7 +26,14 @@ Note :
 【是否有箭頭函式】
     ==> 沒有this、沒有argument
         ==>往外面去找
+【有沒有.call 、 .apply】
+    ==>
 
+【有沒有嚴格模式】
+    ==>"use strict"
+        ==>不會有全域物件(window、global)
+    ==>寫在哪裡，就是哪裡，不會往外找
+    
 
 
 
