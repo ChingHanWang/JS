@@ -3,17 +3,17 @@
 
 // for loop 
 
-// let list =  [1, 4, 2, 3, 8, 7, 10, 12]
-// let sum= 0
-// for( i = 0 ; i < list.length ; i++ ){
+let list =  [1, 4, 2, 3, 8, 7, 10, 12]
+let sum= 0
+for( i = 0 ; i < list.length ; i++ ){
   
-//   if(list[i]% 2 !== 0 ){
-//     sum += list[i]*3
-//     // sum = sum + list[i]
+  if(list[i]% 2 !== 0 ){
+    sum += list[i]*3
+    // sum = sum + list[i]
 
-//   }
+  }
 
-// }
-// console.log( sum )
+}
+console.log( sum )
 
 
