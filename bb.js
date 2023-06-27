@@ -23,7 +23,3 @@ const result = list
   .map((el) => el * 3)
   .reduce((a, b) => a + b);
 console.log(result);
-
-
-
-
