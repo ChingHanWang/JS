@@ -26,6 +26,3 @@ console.log( sum )
 //   .map((el) => el * 3)
 //   .reduce((a, b) => a + b);
 // console.log(result);
-
-// list = [1, 4, 2, 3, 8, 7, 10, 12];
-// 挑出陣列裡的奇數，乘以 3 之後，計算總和
