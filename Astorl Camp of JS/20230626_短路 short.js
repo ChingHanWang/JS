@@ -18,3 +18,4 @@ function isAdult(age) {
   
   
   // 短路 short
+  // 判斷有沒有 ==> "?""
