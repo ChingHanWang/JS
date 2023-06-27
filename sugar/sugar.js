@@ -3,7 +3,9 @@
 // 題目：完成函數的內容，把傳進去的數字的每個位數平方之後組合在一起
 
 function squareDigits(num) {
-  // 實作寫在這裡
+   let result = num.array.forEach(element => {
+    
+   });
 }
 
 console.log(squareDigits(3212)) // 印出 9414
