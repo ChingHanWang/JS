@@ -3,7 +3,20 @@
 // 題目：找出在數字陣列裡跟其它元素不一樣的值
 
 function findDifferent(numbers) {
-   // 實作寫在這裡
+  let diff = 0
+
+  for( let i = 0 ; i < numbers.length ; i++ ){
+    let diff = numbers[i+1] - numbers[i]
+
+    if(diff !== 0){
+    
+    }
+    
+
+  }
+
+
+
  }
  
  console.log(findDifferent([1, 1, 1, 1, 3, 1, 1, 1])) // 印出 3
