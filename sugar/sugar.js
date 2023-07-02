@@ -12,19 +12,13 @@ function findDifferent(numbers) {
     let indexNumber = numbers[i]    
     for (let j = 0; j < numbers.length; j++ ){
       let compareNumber = numbers[j]
-
-      
       if (indexNumber === compareNumber) {
       counter++
-
       }
-
     } 
-
     if(counter === 1 ){
       return indexNumber
     } 
-
   }
   
 }
