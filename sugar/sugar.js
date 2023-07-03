@@ -9,11 +9,11 @@ function findDifferent(numbers) {
   for (let i = 0; i < numbers.length; i++ ) { 
     let counter = 0  
 
-    let indexNumber = numbers[i]    
+    let indexNumber = numbers[i]
     for (let j = 0; j < numbers.length; j++ ){
       let compareNumber = numbers[j]
       if (indexNumber === compareNumber) {
-      counter++
+        counter++
       }
     } 
     if(counter === 1 ){
