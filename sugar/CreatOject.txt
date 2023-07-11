@@ -1,0 +1,43 @@
+
+For Reference with OPP concect：
+
+        const actions = {
+            attack: function () {
+            console.log("go")
+            },
+            eat: function () {
+            console.log("yummy")
+            },
+        }
+
+        function heroCreator(name, power) {
+            // const hero = {
+            //   name,
+            //   power,
+            // }
+            const hero = Object.create(actions)
+            hero.name = name
+            hero.power = power
+
+            return hero
+        }
+
+        const h1 = heroCreator("cc", 100)
+        const h2 = heroCreator("ff", 200)
+        console.log(h1, h2)
+        h1.attack()
+        h1.eat()
+==============================================
+
+
+
+For Reference:
+
+        function humanReadableTimer(seconds) { 
+        const time = new Date();
+        time.setSeconds(seconds);
+        let timeString = time.toTimeString()
+        return timeString;
+        }
+
+==============================================
