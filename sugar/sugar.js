@@ -1,33 +1,13 @@
-// 編號：CANDY-007
+// 編號：CANDY-008
 // 程式語言：JavaScript
-// 題目：在某個數字陣列裡，可能藏有某個不合群的奇數或偶數，試著找出它！
+// 題目：傳入一字串，計算得分最高的字
+//      英文字母 a 得 1 分、b 得 2 分、c 得 3 分，以此類推。
+//      所有傳入的字都是小寫。
 
-function findSomeDifferent(numbers) {
-  let even = []
-  let odd = []
-  
-  numbers.forEach(element => {
-      if ( element % 2 == 0){
-      even.push(element)
-      }
-      else {
-        odd.push(element)
-      }
-      
-    });
-
-    if(even.length < odd.length ){
-      return even.toString()
-    }
-    else{
-      return odd.toString()
-    }
-
-
-  
-  // 將numbers使用foreach拆分成兩個陣列，一個為奇數，一個為偶數，在進行元素長度比對，回傳短的陣列
+function highestScoreWord(input) {
+  // 實作寫在這裡
 }
 
-console.log(findSomeDifferent([2, 4, 0, 100, 4, 11, 2602, 36])) // 印出 11
-console.log(findSomeDifferent([160, 3, 1719, 19, 11, 13, -21])) // 印出 160
-
+console.log(highestScoreWord("lorem ipsum dolor sit amet")) // 印出 ipsum
+console.log(highestScoreWord("heyn i need a rubygem up to build this")) // 印出 rubygem
+console.log(highestScoreWord("in time machine there are some bugs")) // 印出 there
