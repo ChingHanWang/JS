@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-// var side = 1
-let arr = [];
-arr["5"] =42
-console.log(arr)
-=======
 // document.addEventListener("DOMContentLoaded", ()=> {
 //     const hero = document.querySelector("#hero")
 //     console.log(hero);
@@ -54,4 +48,3 @@ $.ajax({url:url}).done( (posts) => {
  
 
 
->>>>>>> sugar08
